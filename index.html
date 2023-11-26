@@ -12,9 +12,10 @@
   <header>
     <h1>Tic Tac Toe</h1>
   </header>
-    <aside class="active">
+    <section class="active">
       <h2 class="active___player" id="currentPlayer"></h2>
-    </aside>
+      <h3 class="active__winner" id="winner"></h3>
+    </section>
     <section id="gameBoard" class="board">
         <div id="box1" class="box"></div>
         <div id="box2" class="box"></div>
@@ -26,11 +27,11 @@
         <div id="box8" class="box"></div>
         <div id="box9" class="box"></div>
     </section>
-    <section id="gameControlls">
-    <input type="text" id="p_one" placeholder="Player One">
-    <input type="text" id="p_two" placeholder="Player Two">
-    <button type="submit" id="startBtn">Start Game</button>
-    <button id="resetBtn">Reset</button>
+    <section class="gamecontrolls" id="gameControlls">
+    <input type="text" class="gamecontrolls__playerinput" id="p_one" placeholder="Player One" required>
+    <input type="text" class="gamecontrolls__playerinput" id="p_two" placeholder="Player Two" required>
+    <button class="gamecontrolls__button start" type="submit" id="startBtn">Start Game</button>
+    <button class="gamecontrolls__button restart" id="resetBtn">Reset</button>
     </section>
 </main>
 </body>
