@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
 </head>
 <body>
-    
+<main>
+  <header>
+    <h1>Tic Tac Toe</h1>
+  </header>
+    <aside class="active">
+      <h2 class="active___player" id="currentPlayer"></h2>
+    </aside>
+    <section id="gameBoard" class="board">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+        <div id="box6" class="box"></div>
+        <div id="box7" class="box"></div>
+        <div id="box8" class="box"></div>
+        <div id="box9" class="box"></div>
+    </section>
+    <section id="gameControlls">
+    <input type="text" id="p_one" placeholder="Player One">
+    <input type="text" id="p_two" placeholder="Player Two">
+    <button type="submit" id="startBtn">Start Game</button>
+    <button id="resetBtn">Reset</button>
+    </section>
+</main>
 </body>
 </html>
